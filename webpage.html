@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie</title>
+    <link rel="icon" href="/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="logo">
+        </div>
+        <nav>
+            <a href="webpage.html">HOME</a>
+            <a href="#aboutus">ABOUT</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#contactus">CONTACT US</a>
+        </nav>
+        <div class="socials">
+            <a href="https://twitter.com/mask_alishayan" title="Twitter"><img src="/images/twitter.png" alt="Twitter"></a>
+            <a href="https://facebook.com/programming.mask" title="Facebook"><img src="/images/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com/programming.mask" title="Instagram"><img src="/images/instagram.png" alt="Instagram"></a>
+            <a href="https://youtube.com/MASKalishyan" title="YouTube"><img src="/images/youtube.png" alt="YouTube"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h1>WELCOME</h1>
+        </section>
+
+        <div id="gallery">
+            <h2>GALLERY</h2>
+            <div class="gallery-images">
+                <img src="/images/s2.png" alt="Gallery Image 1">
+                <img src="/images/s3.png" alt="Gallery Image 2">
+                <img src="/images/s5.png" alt="Gallery Image 3">
+                <img src="/images/s6.png" alt="Gallery Image 4">
+            </div>
+        </div>
+
+        <div id="aboutus">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who are we?</h3>
+                    <p>Launched in 2010, our technology platform connects customers, restaurant partners, and delivery partners, serving their multiple needs. Customers use our platform to search and discover restaurants, read and write customer-generated reviews, and view and upload photos, order food delivery, book a table, and make payments while dining out at restaurants. On the other hand, we provide restaurant partners with industry-specific marketing tools which enable them to engage and acquire customers to grow their business while also providing a reliable and efficient last-mile delivery service. We also operate a one-stop procurement solution, Hyperpure, which supplies high-quality ingredients and kitchen products to restaurant partners. We also provide our delivery partners with transparent and flexible earning opportunities.</p>
+                </div>
+                <img src="/images/s1.png" alt="About Us Image">
+            </div>
+        </div>
+
+        <div id="contactus">
+            <h2>CONTACT US</h2>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                
+                <textarea rows="4" placeholder="Your message here..." required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-quick-links">
+            <a href="webpage.html">Home</a>
+            <a href="#aboutus">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contactus">Contact Us</a>
+        </div>
+        <p>Smoothie</p>
+        <p>smoothie@gmail.com</p>
+        <p>1234567890</p>
+        <p>Smoothiezzz/Unicorn Fantasy Land/Rainbows/345757</p>
+        <div class="footer-socials">
+            <a href="https://twitter.com/mask_alishayan" title="Twitter"><img src="/images/twitter.png" alt="Twitter"></a>
+            <a href="https://web.facebook.com/programming.mask" title="Facebook"><img src="/images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/programming.mask" title="Instagram"><img src="/images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/channel/MASKalishayan" title="YouTube"><img src="/images/youtube.png" alt="YouTube"></a>
+        </div>
+        <p>&copy; 2020 MASK</p>
+    </footer>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your message!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
